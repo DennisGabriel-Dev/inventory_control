@@ -1,0 +1,4 @@
+web: bin/rails server
+css: bin/rails tailwindcss:watch
+worker: bundle exec rake resque:work QUEUE=*
+clock:  bundle exec rake resque:scheduler
